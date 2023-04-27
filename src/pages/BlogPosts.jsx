@@ -12,6 +12,12 @@ import Hulles_Naturelles from '../Ressourses/images/hulles_naturelles.png'
 const BlogPosts = () => {
     return (
         <>
+
+
+
+
+
+        
             <nav className='navbar'>
                 <h1>Navabar</h1>
 
