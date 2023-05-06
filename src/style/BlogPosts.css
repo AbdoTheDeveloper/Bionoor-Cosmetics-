@@ -8,6 +8,8 @@ html {
     font-size: 16px;
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +22,7 @@ body {
     overflow-x: hidden;
     position: relative;
     z-index: 2;
+    /* background: linear-gradient(136deg , white 15%,#E7C8B3 35% ,  #B72A36 50%); */
 }
 
 .navbar {
@@ -226,7 +229,7 @@ main.blogs_list .blog_post_row {
 
 main.blogs_list .blog_post figure {
     width: 100%;
-    height: auto;
+    height: 45%;
     position: relative;
 
 }
@@ -253,7 +256,8 @@ main.blogs_list .blog_post figure .category {
     text-align: center;
     color: white;
     padding: 4px 16px;
-    left: 40%;
+    left: 8.5vw;
+    text-align: center;
     bottom: -5%;
     font-size: 16px;
     font-weight: bold;
@@ -417,80 +421,77 @@ main.blogs_list .blog_post div a button:hover {
 
 
 @media screen and (min-width:2560px) {
+    body{
+        /* background-color: aqua; */
+    }
     .blogs_list_container {
         width: 90%;
         margin: auto;
     }
 
-    * {
-        /* border: 10px solid blue; */
-    }
+    
 
     section>figure>p {
-        font-size: 4rem;
+        font-size: 2vw;
     }
 
     .blog_post_row {
         width: 80%;
-        /* background-color: brown; */
+
     }
 
     section figure {
-        height: 1000px;
+        height: 75vh;
     }
 
     section .meta_data p:first-of-type {
-        font-size: 2.5rem;
+        font-size: 1.3vw;
         width: 100%;
     }
 
 
-    section .meta_data .read_more button img {
+    /* section .meta_data .read_more button img {
         width: 3rem;
         height: 3rem;
 
-    }
+    } */
 
     section .meta_data p:last-child {
-        font-size: 2rem;
+        font-size: 1.1vw;
     }
 
     #Customers {
-        width: 100px;
+        width: 3vw;
     }
 
     .read_more span {
         font-size: 2rem;
     }
     .blog_post div div:last-child button img , 
-    section .meta_data .read_more span img{
-        width: 3rem  ;
-        height: 3rem;
+    section .meta_data .read_more button img{
+        width: 1.5vw  ;
+        height: 1.5vw;
     }
     header {
         margin-top: 1vh;
     }
 
-    body {
-        /* background-color: bisque; */
-    }
-
     header h1 {
-        font-size: 5rem;
+        font-size: 2.5vw;
     }
 
     header p {
-        font-size: 2.5rem;
+        font-size: 1.3vw;
     }
 
     .blog_post {
-        width: 700px;
-        height: 1000px;
+        width: 23vw;
+        height: 35vw;
     }
 
     .blog_post h4 {
-        margin: 1vh auto;
-        font-size: 30px;
+        margin: 0.5vw auto;
+        font-size: 1.08vw;
         font-weight: bolder;
     }
     div.read_more{
@@ -498,35 +499,69 @@ main.blogs_list .blog_post div a button:hover {
     }
 
     main.blogs_list .blog_post div .blog-postcontent {
-        font-size:32px;
+        font-size:1.05vw;
+    }
+    .down_part{
+        padding:10px;
     }
 
     span.posted_at {
-        font-size: 2rem;
+        font-size: 1.1vw;
+        font-weight: 1px;
     }
     section .meta_data .read_more button ,
     .blog_post div div:last-child button {
-        font-size: 2rem;
+        font-size: 1.05vw;
         font-weight: bolder;
-        width: 230px;
-        height: 50px;
+        width: 7.3vw;
+        height: 1.5vw;
         /* padding: 10px auto; */
         box-sizing: content-box;
-        border-radius:10px;
+        border-radius:0.2vw;
+        color:white;
+        padding: 0.4vw 0.4vw;
+        
     }
 
-    main.blogs_list .blog_post figure .category {
+    /* main.blogs_list .blog_post figure .category {
         font-size: 25px;
         height: 30px;
-        left: 35%;
+        left: 8vw;
         width: 140px;
         padding: 0;
         box-sizing: content-box;
         padding: 6px 12px;
 
-    }
+    } */
     .pagination{
-        font-size: 35px;
+        margin: 5vw auto;
+        font-size: 1.1vw;
+        width: 100%;
+    }
+    .pagination>a,
+.pagination>span{
+    margin: 0.3vw;
+    padding: 0.6vw;
+}
+section .meta_data .read_more span{
+    font-size: 1.2vw;
+    /* background-color: #B72A36; */
+    width: 4vw;
+}
+section .meta_data .read_more span img{
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+    main.blogs_list .blog_post figure .category{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:1.1vw;
+        height: 1.8vw;
+        padding: 0.5vw;
+        
+
     }
 }
 
@@ -546,29 +581,84 @@ main.blogs_list .blog_post div a button:hover {
 
 
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1540px) and (max-width:2560px) {
 
-    .blog_post_row {
-        width: 100%;
-        justify-content: center;
-
+    *{
+        /* border: 2px red dotted; */
+    }
+    .blogs_list_container {
+        width: 90vw;
+    }
+    header p{
+        font-size: 1.8rem;
+    }
+    section figure {
+        height: 70vh;
     }
 
-    section .meta_data p:first-of-type {
-        width: 100%;
+    section > figure > p{
+        font-size:2.5rem
     }
-
-    .down_part div a button,
-    section .meta_data .read_more button {
+    section .meta_data p:first-of-type{
+        font-size: 1.5rem;
+        text-align: left;
+        width: 90%;
+    } 
+    .blog_post div div:last-child button , 
+    section .meta_data .read_more button{
+        width: 7.5rem;
+        height: 1.5rem;
+        box-sizing: content-box;
+        font-size: 1.1rem;
+        border-radius:6px;
         font-weight: bolder;
     }
-
-
+    section .meta_data .read_more span{
+        width: 3.5rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem;
+    }
+    section .meta_data .read_more span img{
+        width: 2rem;
+        height: 2rem;
+    }
+    #Customers {
+        width: 4.5vw;
+    }
+    section .meta_data p:last-child{
+        font-size: 1.3rem;
+    }
+    span.posted_at{
+        font-size: 1.2rem;
+    }
+    .blog_post{
+        width: 22vw;
+        height: 600px;
+    }
+     .blog_post h4{
+        font-size: 1.1rem;
+     }
+     main.blogs_list .blog_post div .blog-postcontent{
+        font-size:1.1rem;
+     }
+ 
 }
 
-@media screen and (max-width:1024px) {
+
+
+
+
+@media screen and (min-width:1100px)    and (max-width:1520px)  {
     body {
-        background-color: aqua;
+        /* background-color: aqua; */
+    }
+    main.blogs_list .blog_post div .blog-postcontent{
+        font-size:1.03vw;
+    }
+    .blog_post{
+        width: 25vw;
+        height: 36vw;
     }
     header h1{
         font-size: 2rem;
@@ -577,8 +667,214 @@ main.blogs_list .blog_post div a button:hover {
         font-size: 1.3rem;
     }
     section figure{
-        height: 450px
+        height: 34.5vw
+    }
+    .blog_post h4{
+        font-size: 1.2vw;
+    }
+    section .meta_data p:first-of-type{
+        font-size: 1.3vw;
+        width: 80%;
+    }
+    section .meta_data p:last-child{
+        font-size: 1.1vw;
+    }
+
+    section .meta_data .read_more button ,
+    .blog_post div div:last-child button{
+        width: 10.5vw;
+        font-size: 1vw;
+        height: 2.3vw;
+    }
+    section .meta_data .read_more span{
+        font-size: 1.2vw;
+    }
+    .blog_post div div:last-child button img , 
+    section .meta_data .read_more button img{
+        width: 1.4vw;
+        height: 1.4vw;
     }
 
 
+    main.blogs_list .blog_post figure .category{
+        width:6vw;
+        font-size: 1.05vw;
+        left: 9vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    span.posted_at{
+        font-size: 1vw;
+    }
+}
+
+@media screen and (min-width:2000px) and (max-width:2560px){
+    body{
+        /* background-color: chartreuse; */
+    }
+    section .meta_data p:last-child{
+        font-size: 1.1vw;
+    }
+    main.blogs_list .blog_post div .blog-postcontent{
+        font-size: 1vw;
+    }
+
+    section .meta_data p:first-of-type{
+        font-size: 1.2vw;
+    }
+    .blog_post{
+        /* border: 10px red solid; */
+        height:700px ;
+    }
+    .blog_post h4{
+        margin: 10px auto;
+        font-size: 1.3rem;
+    }
+    main.blogs_list .blog_post figure .category {
+
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .blog_post div div:last-child button , 
+    section .meta_data .read_more button{
+        height: 30px;
+        font-size: 1.4rem;
+        width: 9rem;
+        margin: 0.2vw auto;
+    }
+    .pagination{
+        font-size:1.5rem;
+    }
+    section .meta_data .read_more span{
+        font-size: 1.2vw;
+        width: 3.2vw;
+    }
+}
+
+@media screen and (min-width:2200px) and (max-width:2560px){
+    body{
+        /* background-color: aqua; */
+    }
+    .blog_post{
+        height: 780px;
+    }
+    span.posted_at{
+       font-size: 1.4rem;        
+    }
+    .blog_post h4{
+        font-size: 1.5rem;
+    }
+    main.blogs_list .blog_post div .blog-postcontent{
+        font-size: 1.5rem;
+    }
+    .pagination{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (min-width:1800px) and (max-width:2000px){
+    body{
+        /* background-color:#B72A36 ; */
+    }
+    main.blogs_list .blog_post div .blog-postcontent{
+        font-size: 1.25rem;        
+    }
+    section .meta_data .read_more span{
+        font-size: 1.2vw;
+        font-weight: bold;
+    }
+    main.blogs_list .blog_post figure .category{
+        font-size: 1.2rem;
+    }
+    .blog_post div div:last-child button , 
+    section .meta_data .read_more button{
+        font-size: 1.1vw;
+        width: 7vw;
+    }
+    .blog_post{
+        height :670px;
+    }
+    .blog_post h4{
+        font-size: 1.25rem;
+        margin:10px auto;
+    }
+    .pagination{
+        font-size: 1.25rem;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:1024px){
+    body{
+        background-color: aqua;
+    }
+    main.blogs_list .blog_post div .blog-postcontent{
+        font-size:1.03vw;
+    }
+    .blog_post{
+        width: 25vw;
+        height: 37vw;
+    }
+    header h1{
+        font-size:2.5vw;
+    }
+    header p{
+        font-size: 1.5vw;
+    }
+    section figure{
+        height: 33vw;
+
+        
+    }
+    section figure p{
+        font-size: 2vw;
+    }
+    .blog_post h4{
+        font-size: 1.2vw;
+    }
+    section .meta_data p:first-of-type{
+        font-size: 1.3vw;
+        width: 80%;
+    }
+    section .meta_data p:last-child{
+        font-size: 1.1vw;
+    }
+
+    section .meta_data .read_more button ,
+    .blog_post div div:last-child button{
+        width: 10vw;
+        font-size: .9vw;
+        height: 2.3vw;
+        font-weight: bolder;
+    }
+    section .meta_data .read_more span{
+        font-size: 1.2vw;
+    }
+    .blog_post div div:last-child button img , 
+    section .meta_data .read_more button img{
+        width: 1vw;
+        height: 1vw;
+    }
+
+    .blog_post div div:last-child {
+        position:absolute;
+        bottom:0px;
+    }
+    main.blogs_list .blog_post figure .category{
+        width:6vw;
+        font-size: 1.05vw;
+        left: 9vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    span.posted_at{
+        font-size: 1vw;
+    }
 }
